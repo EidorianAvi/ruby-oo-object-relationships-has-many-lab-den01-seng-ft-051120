@@ -14,7 +14,8 @@ class Author
   end
   
   def posts
-    Post.all.select{|author| author.name = self}
+    Post.all.select
+    binding.pry
   end
   
   def add_post_by_title(title) 
